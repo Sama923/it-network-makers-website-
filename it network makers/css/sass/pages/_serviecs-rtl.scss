@@ -1,0 +1,164 @@
+#serviecs-page {
+  width                : 100%;
+  height               : 80px;
+  color                : #fff;
+  background-image     : url(../img/service-background.jpg);
+  background-repeat    : no-repeat;
+  background-position  : center center;
+  position             : relative;
+  background-size      : cover;
+  background-attachment: fixed;
+  min-height           : 500px;
+
+
+  .overlay-serviecs-page {
+    top             : 0;
+    left            : 0;
+    background-color: rgba(0.2, 0.2, 0.2, 0.2);
+    width           : 100%;
+    height          : 80px;
+    position        : absolute;
+    min-height      : 500px;
+
+  }
+
+  .contant {
+    padding-top: 100px;
+
+    h1.serviecs-page-title {
+      font-size    : $mainSize + 20;
+      font-weight  : 700;
+      font-family  : 'Cairo', ;
+      margin-bottom: 10px;
+      line-height  : 52px;
+      color        : black;
+    }
+
+    p {
+      font-size  : $mainSize;
+      font-weight: 700;
+      margin-top : 20px;
+      font-family: 'Cairo', ;
+      font-family: 'Almarai', ;
+
+    }
+
+    a {
+      .btn-secondary {
+        color           : #fff;
+        background-color: $mainColor;
+        border-color    : white;
+        margin-top      : 30px;
+        font-weight: 500;
+
+        &:hover {
+          background-color: black;
+
+        }
+      }
+    }
+
+  }
+
+}
+
+
+.heading {
+  h4 {
+    font-weight   : 600;
+    text-align    : center;
+    color         : red;
+    text-transform: uppercase;
+    font-family   : 'Cairo', ;
+    padding-top   : 100px;
+    padding-bottom: 20px;
+
+  }
+
+  p {
+    padding-bottom: 30px;
+    font-size     : $mainSize;
+    text-align    : center;
+    color         : black;
+    font-family   : 'Cairo', ;
+    font-family   : 'Almarai', ;
+  }
+}
+
+// Start box
+
+.box {
+  background-color  : #ffffff;
+  width             : 305px;
+  height            : 500px;
+  -webkit-box-shadow: 15px 17px 38px -17px rgba(12, 125, 187, 0.44);
+  -moz-box-shadow   : 15px 17px 38px -17px rgba(12, 125, 187, 0.44);
+  box-shadow        : 15px 17px 38px -17px rgba(12, 125, 187, 0.44);
+  position          : relative;
+  overflow          : hidden;
+  text-align        : center;
+  float             : right;
+  margin            : 50px 20px;
+
+  &::before {
+    content         : "";
+    bottom          : 0;
+    transition      : 1s ease all;
+    background-color: $thirdColor;
+    height          : 15px;
+    width           : 100%;
+    z-index         : 1;
+    position        : absolute;
+    right           : 0;
+  }
+
+  &:nth-child(1)::before {
+    background: rgb(12, 125, 187);
+    background: linear-gradient(0deg, rgba(12, 125, 187, 1) 0%, rgba(237, 234, 228, 1) 100%);
+  }
+
+  .section-content {
+    z-index   : 2;
+    position  : relative;
+    transition: 1s ease all;
+
+    h4 {
+      font-size     : $mainSize;
+      text-transform: uppercase;
+      font-family  : 'Cairo', ;
+      color         : #0c7dbb;
+      font-weight   : 600;
+
+    }
+
+    ul {
+      text-transform: capitalize;
+      padding       : 5px;
+        font-family   : 'Cairo', ;
+      font-family   : 'Almarai', ;
+      padding-top: 20px;
+
+      li {
+        padding        : 3px;
+        list-style-type: none;
+        text-align: right;
+        font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+        img{
+          width: 10%;
+          margin-left: 7px;
+        }
+
+      }
+    }
+
+    .service-logo {
+      img {
+        width : 120px;
+        margin: 20px 10px
+      }
+    }
+  }
+}
+

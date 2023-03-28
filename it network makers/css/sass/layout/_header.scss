@@ -1,0 +1,74 @@
+* {
+  margin : 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#nav-bar {
+  position: sticky;
+  top     : 0;
+  z-index : 10;
+  border-bottom: 3px solid rgb(0,0,0);
+
+}
+
+.navbar {
+  padding         : 0;
+  background-color: #ffffff;
+  // font-family: $mainFont;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+
+}
+
+
+.navbar-nav {
+  .nav-link {
+    padding-left: 20px;
+  }
+  
+  li {
+    
+    i {
+      color       : $mainColor;
+      display     : inline;
+      padding-left: 3px;
+
+    }
+
+    a {
+      color      : rgb(14, 6, 6) !important;
+      font-weight: 400;
+    }
+
+  }
+
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(19, 17, 18, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+
+  .navbar-toggler {
+    border: 4px double #222020;
+    border-radius: .25rem;
+}
+  .nav-item img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+// media query
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 7px;
+      padding-left: 8px;
+  }
+}
